@@ -102,8 +102,8 @@ helloBtn.render();
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _helloWorldBtn_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
-/* harmony import */ var _helloWorldBtn_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_helloWorldBtn_css__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _helloWorldBtn_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
+/* harmony import */ var _helloWorldBtn_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_helloWorldBtn_scss__WEBPACK_IMPORTED_MODULE_0__);
 
 
 class HelloBtn {
@@ -433,7 +433,7 @@ module.exports = function (list, options) {
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(5);
 exports = ___CSS_LOADER_API_IMPORT___(false);
 // Module
-exports.push([module.i, ".helloWorldBtn {\r\n    font-size: 20px;\r\n    padding: 7px 15px;\r\n    background: green;\r\n    color: white;\r\n    outline: none;\r\n}\r\n\r\n.helloWorldText {\r\n    color: green;\r\n    font-weight: bold;\r\n}", ""]);
+exports.push([module.i, ".helloWorldBtn {\n  font-size: 20px;\n  padding: 7px 15px;\n  background: green;\n  color: white;\n  outline: none; }\n\n.helloWorldText {\n  color: red;\n  font-weight: bold; }\n", ""]);
 // Exports
 module.exports = exports;
 

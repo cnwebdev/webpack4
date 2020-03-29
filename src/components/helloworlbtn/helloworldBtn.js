@@ -1,4 +1,4 @@
-import './helloWorldBtn.css';
+import './helloWorldBtn.scss';
 
 class HelloBtn {
     render() {
