@@ -92,8 +92,7 @@
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_helloworlbtn_helloworldBtn_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 
-
-const helloBtn = new _components_helloworlbtn_helloworldBtn_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
+var helloBtn = new _components_helloworlbtn_helloworldBtn_js__WEBPACK_IMPORTED_MODULE_0__["default"]();
 helloBtn.render();
 
 /***/ }),
@@ -104,23 +103,42 @@ helloBtn.render();
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _helloWorldBtn_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _helloWorldBtn_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_helloWorldBtn_scss__WEBPACK_IMPORTED_MODULE_0__);
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 
-class HelloBtn {
-    render() {
-        const button = document.createElement('button');
-        button.innerHTML = 'Hello World!';
-        button.classList.add('helloWorldBtn');
-        const body = document.querySelector('body');
-        button.onclick = () => {
-            const p = document.createElement('p');
-            p.innerHTML = 'Hello World!';
-            p.classList.add('helloWorldText');
-            body.appendChild(p);
-        }
-        body.appendChild(button);
+
+var HelloBtn = /*#__PURE__*/function () {
+  function HelloBtn() {
+    _classCallCheck(this, HelloBtn);
+
+    this.buttonCssClass = 'helloWorldBtn';
+  }
+
+  _createClass(HelloBtn, [{
+    key: "render",
+    value: function render() {
+      var button = document.createElement('button');
+      var body = document.querySelector('body');
+      button.innerHTML = 'Hello World!';
+      button.classList.add(this.buttonCssClass);
+
+      button.onclick = function () {
+        var p = document.createElement('p');
+        p.innerHTML = 'Hello World!';
+        p.classList.add('helloWorldText');
+        body.appendChild(p);
+      };
+
+      body.appendChild(button);
     }
-}
+  }]);
+
+  return HelloBtn;
+}();
 
 /* harmony default export */ __webpack_exports__["default"] = (HelloBtn);
 
